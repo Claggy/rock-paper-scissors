@@ -51,42 +51,43 @@
     }
 
     function playRound(playerSelection, computerSelection) {
-      
+      let currentScore = `Current score is You: ${myScore} Computer: ${compScore}`;
+
       switch (true) {
         case playerSelection === 'rock' && computerSelection === 'paper':
-          return `You lose round ${round}! Paper beats rock. Current score is You: ${myScore} Computer: ${compScore}`;
+          return `You lose round ${round}! Paper beats rock. ${currentScore}`;
           break;
 
         case playerSelection === 'rock' && computerSelection === 'rock':
-          return `Round ${round} is a tie! You both chose ${playerSelection}. Current score is You: ${myScore} Computer: ${compScore}`;
+          return `Round ${round} is a tie! You both chose ${playerSelection}. ${currentScore}`;
           break;
 
         case playerSelection === 'rock' && computerSelection === 'scissors':
-          return `You win round ${round}! Rock beats scissors. Current score is You: ${myScore} Computer: ${compScore}`;
+          return `You win round ${round}! Rock beats scissors. ${currentScore}`;
           break;
 
         case playerSelection === 'paper' && computerSelection === 'paper':
-          return `Round ${round} is a tie! You both chose ${playerSelection}. Current score is You: ${myScore} Computer: ${compScore}`;
+          return `Round ${round} is a tie! You both chose ${playerSelection}. ${currentScore}`;
           break;
 
         case playerSelection === 'paper' && computerSelection === 'rock':
-          return `You win round ${round}! Paper beats rock. Current score is You: ${myScore} Computer: ${compScore}`;
+          return `You win round ${round}! Paper beats rock. ${currentScore}`;
           break;
 
         case playerSelection === 'paper' && computerSelection === 'scissors':
-          return `You lose round ${round}! Scissors beats paper. Current score is You: ${myScore} Computer: ${compScore}`;
+          return `You lose round ${round}! Scissors beats paper. ${currentScore}`;
           break;
 
         case playerSelection === 'scissors' && computerSelection === 'scissors':
-          return `Round ${round} is a tie! You both chose ${playerSelection}. Current score is You: ${myScore} Computer: ${compScore}`;
+          return `Round ${round} is a tie! You both chose ${playerSelection}. ${currentScore}`;
           break;
 
         case playerSelection === 'scissors' && computerSelection === 'rock':
-          return `You lose round ${round}! Rock beats scissors. Current score is You: ${myScore} Computer: ${compScore}`;
+          return `You lose round ${round}! Rock beats scissors. ${currentScore}`;
           break;
 
         case playerSelection === 'scissors' && computerSelection === 'paper':
-          return `You win round ${round}! Scissors beats paper. Current score is You: ${myScore} Computer: ${compScore}`;
+          return `You win round ${round}! Scissors beats paper. ${currentScore}`;
           break;
 
         case playerSelection === undefined:  
